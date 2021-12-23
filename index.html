@@ -3,6 +3,13 @@
 <head>
 <title>Responsive Resume using css grid</title>
 <style>
+
+@media screen and (max-width:674px)
+{
+    .left-section{
+        grid-template-columns:repeat(1,1fr);
+    }
+}
 .main-content{
     display:grid;
     grid-template-columns:300px 700px;
@@ -80,12 +87,6 @@
 .icon{
     width:85px;
     height:50px;
-}
-@media screen and(max-width:674px)
-{
-    .left-section{
-        grid-template-columns:repeat(1,1fr);
-    }
 }
 </style>
 </head>
